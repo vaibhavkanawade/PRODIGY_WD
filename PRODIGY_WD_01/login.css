@@ -1,0 +1,39 @@
+body {
+    background-color: white;
+    text-align: center;
+}
+
+form {
+    background-color: aqua;
+    max-width: 600px;
+    margin: 20px auto;
+    margin-top: 10%;
+    padding: 30px 20px;
+    border: 2px solid black;
+    box-shadow: 2px 4px 20px 5px rgba(11, 11, 11, 0.5);
+
+}
+
+.uname,
+.lname {
+    font-size: 20px;
+}
+
+.uname,
+.lname label {
+    background-color: transparent;
+    padding: 20px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+button {
+    display: block;
+    color: green;
+    width: 20%;
+    margin-top: 50px;
+    margin-left: 180px;
+    align-items: right;
+    text-decoration: none;
+}

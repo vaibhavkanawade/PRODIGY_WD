@@ -1,0 +1,291 @@
+*,
+*:before,
+*:after {
+
+    -webkit-box-sizing: inherit;
+
+    -moz-box-sizing: inherit;
+
+    box-sizing: inherit;
+
+}
+
+
+
+html {
+
+    box-sizing: border-box;
+
+    -moz-box-sizing: border-box;
+
+    -webkit-box-sizing: border-box;
+
+}
+
+
+
+
+
+
+
+
+
+
+body {
+
+    font-family: 'Lato', sans-serif;
+
+    margin: 0;
+
+    background: url('/img/flights.jpg') no-repeat center center fixed;
+
+    background-size: cover;
+
+    overflow: hidden;
+
+    color: #0a0a0b;
+
+}
+
+
+
+ul,
+nav {
+
+    list-style: none;
+
+    padding: 0;
+
+}
+
+
+
+a {
+
+    color: #fff;
+
+    text-decoration: none;
+
+    opacity: 0.9;
+
+}
+
+
+
+a:hover {
+
+    opacity: 1;
+
+}
+
+
+
+h1 {
+
+    font-size: 3rem;
+
+    font-weight: 700;
+
+    color: #fff;
+
+    margin: 0 0 1.5rem;
+
+}
+
+
+
+header {
+
+    position: absolute;
+
+    top: 0;
+
+    left: 0;
+
+    z-index: 10;
+
+    width: 100%;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    color: #fff;
+
+    padding: 10px 100px 0;
+
+}
+
+
+
+header nav ul {
+
+    display: flex;
+
+}
+
+
+
+header nav li {
+
+    margin: 0 15px;
+
+}
+
+
+
+header nav li:first-child {
+
+    margin-left: 0;
+
+}
+
+
+
+header nav li:last-child {
+
+    margin-right: 0;
+
+}
+
+.div-h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    flex-direction: column;
+
+    height: 700px;
+    ;
+    width: 100%;
+    opacity: 0.8 rgb(222, 81, 81);
+
+    /* overflow: hidden; */
+
+}
+
+.div-h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 30px 30px 30px 30px;
+    border-radius: 10px;
+}
+
+.input1 {
+    padding: 65px 40px 6px 12px;
+
+}
+
+#search {
+    padding: 10px 10px 10px;
+    border-radius: 50px;
+    background-color: orange;
+    border: gray;
+}
+
+#search:hover {
+    cursor: pointer;
+}
+
+.input2 {
+    padding: 6px 40px 6px 12px;
+    flex-direction: row;
+}
+
+#date1 {
+    padding: 10px 10px 10px 10px;
+}
+
+#date2 {
+    padding: 10px 10px 10px 10px;
+}
+
+.input3 {
+    padding: 6px 40px 6px 12px;
+}
+
+#adult {
+    padding: 10px 10px 10px 10px;
+}
+
+/* Media Queries */
+@media screen and (min-width: 768px) {
+    .box {
+        width: 48%;
+        /* Two boxes per row */
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .box {
+        width: 30%;
+        /* Three boxes per row */
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .div-h1 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .div-h1 h2 {
+        margin-bottom: 10px;
+    }
+
+    .div-h1 nav {
+        margin-top: 10px;
+    }
+
+    .div-h2 h5 {
+        font-size: 1.5rem;
+    }
+
+    .div-h2 h1 {
+        font-size: 2rem;
+    }
+
+    .div-h3 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .div-h3 .input1,
+    .div-h3 .input2,
+    .div-h3 .input3,
+    .div-h3 .input4 {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .city-section {
+        padding: 0 10px;
+    }
+
+    .box {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 330px) {
+    header nav {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    header nav li {
+        margin: 5px 0;
+    }
+}
